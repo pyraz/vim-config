@@ -25,3 +25,5 @@ runtime! init/**.vim
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'

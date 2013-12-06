@@ -165,3 +165,9 @@
 [submodule "bundle/edit-plus"]
 	path = bundle/edit-plus
 	url = https://github.com/mgamba/edit-plus.git
+[submodule "bundle/vim-rspec"]
+	path = bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "bundle/tslime"]
+	path = bundle/tslime
+	url = https://github.com/jgdavey/tslime.vim.git
