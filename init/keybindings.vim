@@ -100,9 +100,9 @@ map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
 map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 
 " Run tests
-map <leader>t :call RunNearestSpec()<CR>
-map <leader>T :call RunCurrentSpecFile()<CR>
-map <leader>tt :wa<CR>:RunTestAgain<CR>
+map <leader>R :call RunNearestSpec()<CR>
+map <leader>r :call RunLastSpec()<CR>
+map <leader><C-r> :call RunCurrentSpecFile()<CR>
 
 map <F12> :write<CR>:RunTest<CR>
 imap <F12> <ESC><F12>
