@@ -123,9 +123,6 @@
 [submodule "bundle/vim-colors-tomorrow"]
 	path = bundle/vim-colors-tomorrow
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git
-[submodule "bundle/vim-powerline"]
-	path = bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
@@ -171,3 +168,6 @@
 [submodule "bundle/tslime"]
 	path = bundle/tslime
 	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
