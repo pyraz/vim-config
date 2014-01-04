@@ -1,4 +1,4 @@
-set guifont=Menlo:h21
+set guifont=Source\ Code\ Pro\ Medium\ 12 " Set font to Adobes Source Code Pro
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
@@ -32,7 +32,7 @@ set splitright                  " Add new windows towards the right
 set splitbelow                  " ... and bottom
 set wildmode=list:longest       " Bash-like tab completion
 set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
-set cursorline                  " Highlight current line
+set cursorline                  " Highlight current linedale
 
 set laststatus=2                " Always show statusline
 
