@@ -4,6 +4,9 @@
 let mapleader = ","
 let maplocalleader = ";"
 
+" jj - Get out of insert mode like a boss
+imap jj   <Esc>
+
 " Gracefully handle holding shift too long after : for common commands
 cabbrev W w
 cabbrev Q q
@@ -29,6 +32,10 @@ map <leader>w   ^Ww
 map <leader>=   ^W=
 map <leader>j   ^Wj
 map <leader>k   ^Wk
+nmap <C-j>      <C-w>j
+nmap <C-k>      <C-w>k
+nmap <C-h>      <C-w>h
+nmap <C-l>      <C-w>l
 
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
 map <D-<>       :tabedit ~/.vimrc<CR>
@@ -73,8 +80,15 @@ vmap <s-tab> <gv
 autocmd VimEnter * iunmap <tab>
 
 " FuzzyFinder
-map <D-e>       :FufBuffer<CR>
-map <leader>rb  :FufBuffer<CR>
+map <leader>e   :e#<CR>
+map <leader>b  :FufBuffer<CR>
+map <leader><C-N> :FufFile **/<CR>
+map <D-e>   :FufBuffer<CR>
+map <leader>n   :FufFile **/<CR>
+map <D-N>   :FufFile **/<CR>
+
+" refresh the FuzzyFinder cache
+map <leader>rf  :FufRenewCache<CR>
 
 " Command-T
 map <D-N>       :CommandTFlush<CR>:CommandT<CR>
@@ -104,14 +118,14 @@ map <leader>R :call RunNearestSpec()<CR>
 map <leader>r :call RunLastSpec()<CR>
 map <leader><C-r> :call RunCurrentSpecFile()<CR>
 
-map <F12> :write<CR>:RunTest<CR>
-imap <F12> <ESC><F12>
-map <F11> :write<CR>:RunTestLine<CR>
-imap <F11> <ESC><F11>
-map <F10> :write<CR>:RunTestAgain<CR>
-imap <F10> <ESC><F10>
-map <F9> :write<CR>:RunTestPrevious<CR>
-imap <F9> <ESC><F9>
+" map <F12> :write<CR>:RunTest<CR>
+" imap <F12> <ESC><F12>
+" map <F11> :write<CR>:RunTestLine<CR>
+" imap <F11> <ESC><F11>
+" map <F10> :write<CR>:RunTestAgain<CR>
+" imap <F10> <ESC><F10>
+" map <F9> :write<CR>:RunTestPrevious<CR>
+" imap <F9> <ESC><F9>
 
 " Disable middle mouse button, F1
 map <MiddleMouse>   <Nop>
