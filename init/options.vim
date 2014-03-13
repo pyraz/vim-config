@@ -3,7 +3,7 @@ set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
 set guicursor=a:blinkon0        " Turn off the blinking cursor
-
+set visualbell                  " Supress audio/visual error bell
 set notimeout                   " No command timeout
 set showcmd                     " Show typed command prefixes while waiting for operator
 set mouse=a                     " Use mouse support in XTerm/iTerm.
@@ -34,11 +34,19 @@ set wildmode=list:longest       " Bash-like tab completion
 set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
 set cursorline                  " Highlight current linedale
 
+" More detailed status line
+set statusline=[%n]\ %f\ %m\ %y
+set statusline+=%{fugitive#statusline()} " Show git details"
+set statusline+=%w              " [Preview]
+set statusline+=%=              " Left/right separator
+set statusline+=%c,             " Cursor column
+set statusline+=%l/%L           " Cursor line/total lines
+set statusline+=\ %P            " Percent through file
+ 
 set laststatus=2                " Always show statusline
 
 set incsearch                   " Incremental search
 set history=1024                " History size
-set ignorecase
 set smartcase                   " Smart case-sensitivity when searching
 
 set autoread                    " No prompt for file changes outside Vim
