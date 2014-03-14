@@ -1,0 +1,25 @@
+Pivotal
+-------
+
+README.mkd                    doc                           snipMate                      vim-fugitive                  vim-ruby
+ack.vim                       gundo                         syntastic                     vim-haml                      vim-ruby-refactoring
+ag.vim                        handlebars                    tabular                       vim-irblack                   vim-slim
+autoclose                     insert_mode_background_color  tmux-config                   vim-javascript                vim-surround
+autoload                      matchit                       vim-abolish                   vim-markdown                  vim-textobj-rubyblock
+cdo                           molokai                       vim-coffee-script             vim-org-vim-fuzzyfinder-4.2.2 vim-textobj-user
+command-t                     nerdcommenter                 vim-colors-solarized          vim-org-vim-l9-1.1            vim-tomorrow-theme
+conque_2.0                    nerdtree                      vim-cucumber                  vim-rails                     vim-unimpaired
+cucumbertables                regreplop                     vim-endwise                   vim-repeat                    vim-vividchalk
+
+Mine
+----
+ack.vim                      doc                           nerdtree     tslime                    vim-expand-region              vim-rspec
+ag.vim                       edit-plus                     powerline    vim-abolish               vim-fugitive                   vim-ruby
+autoload                     gundo                         regreplop    vim-blockle               vim-gitgutter                  vim-ruby-refactoring
+camelcasemotion              handlebars                    snipMate     vim-colors-candycode      vim-haml                       vim-slim
+cdo                          insert_mode_background_color  supertab     vim-colors-sampler        vim-javascript                 vim-surround
+command-t                    j-split                       syntastic    vim-colors-solarized      vim-markdown                   vim-textobj-rubyblock
+conque_2.0                   matchit                       tabular      vim-colors-tomorrow       vim-org-vim-fuzzyfinder-4.2.2  vim-textobj-user
+cucumbertables               molokai                       tagbar       vim-cucumber              vim-org-vim-l9-1.1             vim-unimpaired
+difference_from_pivotal.txt  mustache                      test_server  vim-cucumber-align-pipes  vim-rails                      vim-vividchalk
+diffthese                    nerdcommenter                 tmux-config  vim-endwise               vim-repeat                     ZoomWin
