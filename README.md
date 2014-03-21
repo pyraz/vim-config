@@ -13,3 +13,9 @@
 As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
 
     cd ~/.vim && git pull --rebase ; git submodule update ; cd -
+
+
+# Solarized
+
+To get solarized to look good in the terminal, install it for terminal from:
+https://github.com/sigurdga/gnome-terminal-colors-solarized
