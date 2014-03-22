@@ -114,18 +114,14 @@ map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
 map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 
 " Run tests
-map <leader>R :call RunNearestSpec()<CR>
-map <leader>r :call RunLastSpec()<CR>
-map <leader><C-r> :call RunCurrentSpecFile()<CR>
+map <leader>rake :Rake<CR>
+map <leader>.rake  :.Rake<CR>
 
-" map <F12> :write<CR>:RunTest<CR>
-" imap <F12> <ESC><F12>
-" map <F11> :write<CR>:RunTestLine<CR>
-" imap <F11> <ESC><F11>
-" map <F10> :write<CR>:RunTestAgain<CR>
-" imap <F10> <ESC><F10>
-" map <F9> :write<CR>:RunTestPrevious<CR>
-" imap <F9> <ESC><F9>
+" Rails.vim Convenience
+" Go to spec
+map <leader>spec :A<CR>
+" Go to implementation
+map <leader>imp  :A<CR>
 
 " Disable middle mouse button, F1
 map <MiddleMouse>   <Nop>
