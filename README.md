@@ -15,6 +15,19 @@ As long as your checkout is kept clean, you can easily update, rebase your local
     cd ~/.vim && git pull --rebase ; git submodule update ; cd -
 
 
+# Search and Replace with Ag and Cdo
+
+1. :Ag 'pattern to search'
+2. :Cdo s/original/new/c | update
+
+The first step searches recursively from the CWD, which should be the project root.
+The second argument does a search and replace, with the 'c' option, which forces
+us to confirm each replacement. Finally the update command saves all the now
+modified buffers in the QuickFix list.
+
+Furthermore, `\ze`(end) and `\zs`(start) can be used to zero in on a match within a match.
+For example, the patter `/Pratical \zsVim/` will match all occurances of the
+word "Vim" that occur directly after the word "Practical".
 # Solarized
 
 To get solarized to look good in the terminal, install it for terminal from:
