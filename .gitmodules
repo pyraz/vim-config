@@ -191,3 +191,9 @@
 [submodule "bundle/vim-golang"]
 	path = bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux.git
+[submodule "bundle/vimux-golang"]
+	path = bundle/vimux-golang
+	url = https://github.com/benmills/vimux-golang.git

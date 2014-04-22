@@ -106,6 +106,10 @@ map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%"
 " Run tests
 map <leader>rake :Rake<CR>
 map <leader>.rake  :.Rake<CR>
+au FileType ruby map <leader>test :Rake<CR>
+au FileType ruby map <leader>.test :.Rake<CR>
+au FileType go map <leader>test :GolangTestCurrentPackage<CR>
+au FileType go map <leader>.test :GolangTestFocused<CR>
 
 " Rails.vim Convenience
 " Go to spec
