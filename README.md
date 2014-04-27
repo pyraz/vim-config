@@ -24,10 +24,11 @@ Install mercurial, install vim-go. On launch vim-go will install its dependent
 binarie to ~/.vim-go. I had problems with the following, here are their installation
 instructions.
 
-## go.tools orcalce
+### go.tools orcalce
 Run `go get code.google.com/p/go.tools/cmd/oracle` which will install the oracle
 binary to $GOPATH/bin. Copy it to ~/.vim-go/
 
+### errcheck
 `go get` and `go install` github.com/kisielk/errcheck and copy to ~/.vim-go.
 
 
