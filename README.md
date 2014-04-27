@@ -8,6 +8,16 @@
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/ackrc ~/.ackrc
 
+# Installing YouCompleteMe
+
+Build Vim from source: https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+```shell
+sudo apt-get install build-essential cmake
+sudo apt-get install python-dev
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh
+```
+
 # Updating
 
 As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
