@@ -192,7 +192,7 @@
 	url = https://github.com/benmills/vimux-golang.git
 [submodule "bundle/vim-gocode"]
 	path = bundle/vim-gocode
-	url = git@github.com:Blackrush/vim-gocode.git
+	url = https://github.com/Blackrush/vim-gocode.git
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
