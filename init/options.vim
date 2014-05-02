@@ -54,6 +54,9 @@ set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 
+" use + as system clipbaord register
+set clipboard=unnamedplus
+
 set hls                         " search with highlights by default
 " Press Space to turn off highlighting and clear any message already
 " displayed.
