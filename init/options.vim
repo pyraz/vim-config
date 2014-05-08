@@ -54,8 +54,9 @@ set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 
+" Setting this to unnamed or unnamedplus breaks on Mac, so not setting it
 " use + as system clipbaord register
-set clipboard=unnamedplus
+" set clipboard=unnamed
 
 set hls                         " search with highlights by default
 " Press Space to turn off highlighting and clear any message already
