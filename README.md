@@ -8,9 +8,25 @@
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/ackrc ~/.ackrc
 
+# Upgrade Vim to 7.4
+
+It's best to use MacVim. This can be done from either homebrew or by downloading the latest MacVim.
+If using homebrew, it will automatically link /usr/local/bin/vim to the macvim binary. Run `brew linkapps`
+to symlink MacVim in the Applications folder to the right file.
+
+If download MacVim, make sure to copy the `mvim` binary somwhere sensible, and symlinking it to
+`vim` somewhere sensible. This is how you launch MacVim in the terminal (which we want so we can use
+tmux with vimux for running tests).
+
+Alternatively you can install from [source](https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source).
+This is often best when on a linux installation since repos are often slow to update their packages. However,
+when installing on OS X, I would recommend the steps above.
+
+Vim needs to be at version 7.4 or higher so that the autocomplete plugin "You Complete Me" will work
+properly.
+
 # Installing YouCompleteMe
 
-Build Vim from source: https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
 ```shell
 sudo apt-get install build-essential cmake
 sudo apt-get install python-dev
@@ -21,8 +37,9 @@ cd ~/.vim/bundle/YouCompleteMe
 # Installing vim-go
 
 Install mercurial, install vim-go. On launch vim-go will install its dependent
-binarie to ~/.vim-go. I had problems with the following, here are their installation
-instructions.
+binarie to ~/.vim-go. If any binaries fail to install, it will give you an error message.
+For failed binaries, you'll have to `go get` them yourself. I had problems with the following,
+here are their installation instructions.
 
 ### go.tools orcalce
 Run `go get code.google.com/p/go.tools/cmd/oracle` which will install the oracle
@@ -31,6 +48,9 @@ binary to $GOPATH/bin. Copy it to ~/.vim-go/
 ### errcheck
 `go get` and `go install` github.com/kisielk/errcheck and copy to ~/.vim-go.
 
+vim-go also requires you to always have a `$GOPATH` defined. I usually use a global
+`$GOPATH`, `$GOROOT`, and `$GOBIN` install in my profile rc files, and then change
+the `$GOPATH` per project if needed.
 
 # Updating
 
@@ -52,6 +72,7 @@ modified buffers in the QuickFix list.
 Furthermore, `\ze`(end) and `\zs`(start) can be used to zero in on a match within a match.
 For example, the patter `/Pratical \zsVim/` will match all occurances of the
 word "Vim" that occur directly after the word "Practical".
+
 # Solarized
 
 To get solarized to look good in the terminal, install it for terminal from:
@@ -59,6 +80,10 @@ https://github.com/sigurdga/gnome-terminal-colors-solarized
 
 
 # Powerline
+
+Powerline provides the fancy information bar on the bottom of vim. It uses special characters to look nice,
+so you may need to install some fonts for it. Here's a brief description of what to do, but for more
+specific instructions, check out the docs on (Powerline's GitHub Page)[https://github.com/Lokaltog/powerline].
 
 ## Fontconfig
 1. Move vendor/powerline/PowerlineSymbols.otf to ~/.fonts/ (or another X font directory).
