@@ -83,7 +83,7 @@ https://github.com/sigurdga/gnome-terminal-colors-solarized
 
 Powerline provides the fancy information bar on the bottom of vim. It uses special characters to look nice,
 so you may need to install some fonts for it. Here's a brief description of what to do, but for more
-specific instructions, check out the docs on (Powerline's GitHub Page)[https://github.com/Lokaltog/powerline].
+specific instructions, check out the docs on [Powerline's GitHub Page](https://github.com/Lokaltog/powerline).
 
 ## Fontconfig
 1. Move vendor/powerline/PowerlineSymbols.otf to ~/.fonts/ (or another X font directory).
