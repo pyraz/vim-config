@@ -52,6 +52,17 @@ vim-go also requires you to always have a `$GOPATH` defined. I usually use a glo
 `$GOPATH`, `$GOROOT`, and `$GOBIN` install in my profile rc files, and then change
 the `$GOPATH` per project if needed.
 
+### ctags
+Ctags is pretty essential to using vim, and I had to do two things to get things working
+for go. First, install gotags: `go get github.com/jstemmer/gotags`
+
+Next, create `~/.ctags` if it doesn't already exist, and add the following:
+    --langdef=Go
+    --langmap=Go:.go
+    --regex-Go=/func([ \t]+\([^)]+\))?[ \t]+([a-zA-Z0-9_]+)/\2/d,func/
+    --regex-Go=/var[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/d,var/
+    --regex-Go=/type[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/d,type/
+
 # Updating
 
 As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
