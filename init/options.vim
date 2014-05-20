@@ -54,10 +54,6 @@ set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 
-" Setting this to unnamed or unnamedplus breaks on Mac, so not setting it
-" use + as system clipbaord register
-" set clipboard=unnamed
-
 set hls                         " search with highlights by default
 " Press Space to turn off highlighting and clear any message already
 " displayed.
@@ -73,8 +69,18 @@ if $TERM == 'screen-256color'
   set t_RV=[>c
 endif
 
+" OS Specific settings
+if has("mac")
+  set term=$TERM
+else
+  set clipboard=unnamed
+endif
+
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
 " http://code.google.com/p/macvim/issues/detail?id=342
+" GUI Settings
 if has("gui_running")
   set noballooneval
+else
+  set term=builtin_ansi
 endif
