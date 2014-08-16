@@ -62,6 +62,10 @@ map <M-D-Up>    :cp<CR>
 map <M-D-Left>  :bp<CR>
 map <M-D-Right> :bn<CR>
 
+" Previous/next tabs
+map <leader>] :tabn<CR>
+map <leader>[ :tabp<CR>
+
 "indent/unindent visual mode selection with tab/shift+tab
 vmap <tab> >gv
 vmap <s-tab> <gv

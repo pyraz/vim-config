@@ -3,5 +3,10 @@ if &t_Co == 256
   let g:solarized_termcolors=256
 endif
 
-set background=dark
+if has("gui_running")
+  set background=light
+else
+  set background=dark
+endif
+
 colorscheme solarized
