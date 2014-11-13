@@ -1,4 +1,4 @@
-set guifont=Source\ Code\ Pro\ Medium\ 12 " Set font to Adobes Source Code Pro
+set guifont=Source\ Code\ Pro:h15 " Set font to Adobes Source Code Pro
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
