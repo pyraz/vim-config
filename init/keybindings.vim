@@ -71,7 +71,7 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 " Tab in insert mode should just indent
-autocmd VimEnter * iunmap <tab>
+" autocmd VimEnter * iunmap <tab>
 
 " FuzzyFinder
 map <leader>e   :e#<CR>
